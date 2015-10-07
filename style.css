@@ -10,23 +10,35 @@ h1 {
 }
 
 h4 {
-	font-family: Georgia;
+	font-family: "Courier New", Courier, monospace;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 ul {
-	postion: center;
+  border-top-left-radius: 80px 30px;
+  postion: center;
 	display:inline-block;
 	color: #808080;
 	padding-bottom: 3px;
 	font-size: 14px;
 	padding-right: 10px;
 	float: left;
-    font-weight: bold;
-    margin: 0 50px 0 0;
-    padding: 15 !important;
-    text-align: center;
-    background-color: #f4f1e7;
-    line-height: 150%;
+  font-weight: bold;
+  margin: 0 50px 0 5px;
+  padding: 15 !important;
+  text-align: center;
+  background-color: #f4f1e7;
+  line-height: 150%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #266fa1 #266fa1 #000 #266fa1;
+  text-align: justify;
+  text-justify: inter-word;
+  letter-spacing: 0.07em;
 }
 
 .menu {
@@ -34,9 +46,12 @@ ul {
 }
 
 img {
-    position: absolute;
-    top: 65%;
-    margin-left: -(X/2)px;
-    margin-top: -(Y/2)px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+#style1 {
+  background-color: black;
+  color: white;
+}
