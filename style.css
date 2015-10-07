@@ -10,7 +10,7 @@ h1 {
 }
 
 h4 {
-	font-family: Georgia;
+	font-family: "Courier New", Courier, monospace;
 }
 
 p {
@@ -38,6 +38,7 @@ ul {
   border-color: #266fa1 #266fa1 #000 #266fa1;
   text-align: justify;
   text-justify: inter-word;
+  letter-spacing: 0.07em;
 }
 
 .menu {
@@ -50,3 +51,7 @@ img {
     margin-right: auto;
 }
 
+#style1 {
+  background-color: black;
+  color: white;
+}

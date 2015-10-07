@@ -26,7 +26,7 @@ var CookieStand = function(place, minCustHour, maxCustHour, avgCookiesCust, id) 
 	};
 
 	this.makeUL = function(id) {
-		console.log("Hello");
+		console.log("Hello from line 29 of app.js");
 		for(var i = 0; i < this.opHours.length; i++) {
 	        var locationList = document.getElementById(id);
 	        var item = document.createElement('li');
