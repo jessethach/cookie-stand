@@ -1,4 +1,4 @@
-var CookieStand = function(place, minCustHour, maxCustHour, avgCookiesCust, id) {
+var CookieStand = function(place, minCustHour, maxCustHour, avgCookiesCust, id, times) {
 	this.place = place;
 	this.minCustHour = minCustHour;
 	this.maxCustHour = maxCustHour;
@@ -25,17 +25,17 @@ var CookieStand = function(place, minCustHour, maxCustHour, avgCookiesCust, id) 
 	  return this.dailyCookies;
 	};
 
-	this.makeUL = function(id) {
+	this.makeTable = function(id) {
 		console.log("Hello from line 29 of app.js");
 		for(var i = 0; i < this.opHours.length; i++) {
-	        var locationList = document.getElementById(id);
-	        var item = document.createElement('li');
-	        item.appendChild(document.createTextNode (this.opHours[i] + ': ' + this.totalCookiesHour() + ' Cookies'));
-	        locationList.appendChild(item);
-	        console.log("This is where we are appending the opHours array with randomly generated numbers");
+        var locationList = document.getElementById(id);
+        var item = document.createElement('td');
+        item.appendChild(document.createTextNode (this.totalCookiesHour()));
+        locationList.appendChild(item);
+        console.log("This is where we are appending the opHours array with randomly generated numbers");
 		}
 	};
-		this.makeUL(this.id);
+		this.makeTable(this.id);
 }
 
 var pikePlace = new CookieStand('Pike Place Market', 17, 88, 5.2, 'pike');
@@ -43,3 +43,13 @@ var seaTac = new CookieStand('SeaTac Airport', 6, 44, 1.2, 'seatac');
 var southCenter = new CookieStand('Southcenter Mall', 11, 38, 1.9, 'south');
 var bellevueSquare = new CookieStand('Bellevue Square', 20, 48, 3.3, 'belle');
 var alki = new CookieStand('Alki Beach', 3, 24, 3.6, 'alki');
+
+// var placeNames = [pikePlace, seaTac, southCenter, bellevueSquare, alki];
+
+// for (var i = 0; i < placeNames.length; i++) {
+// 	placeNames[i].makeTable();
+
+
+// var tablestore = document.getElementById(palce);
+// varitemstore = document.createElement('td');
+// tablestore.appendchild(document.createTextNode(place));
