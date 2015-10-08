@@ -18,7 +18,7 @@ p {
   text-justify: inter-word;
 }
 
-ul {
+/*ul {
   border-top-left-radius: 80px 30px;
   postion: center;
 	display:inline-block;
@@ -39,7 +39,7 @@ ul {
   text-align: justify;
   text-justify: inter-word;
   letter-spacing: 0.07em;
-}
+}*/
 
 .menu {
     justify-content: space-between;
@@ -99,6 +99,7 @@ nav li {
   background-color: #f4f1e7;
   letter-spacing: 0.07em;
   text-align: center;
+  style
 }
 
 section {
@@ -125,6 +126,7 @@ article ul {
   border-top-left-radius: 1px 1px;
   margin: 10px 10px 0 5px;
   float: none;
+  display:inline-block;
 }
 
 .history {
