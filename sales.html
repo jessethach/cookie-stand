@@ -11,7 +11,7 @@
   <img id="salmonimg" src="img/salmon-logo.png" alt="Salmon cookie" width="500">
 
 <h1> Pat's Amazing Salmon Cookies</h1>
-  <div class"wrapper">
+  <div class="wrapper">
     <table id="sales">
       <thead>
         <th>Store Location</th>
@@ -26,12 +26,13 @@
         <th id="total">Total</th>
       </thead>
     </table>
-    <form id="salesform">
-      <p>Location name:<br><input type="text" name="locationname" size="15" maxlength="30" /></p>
-      <p>Minimum Customers per Hour:<br><input type="text" name="mincustomer" size="15" maxlength="30" /></p>
-      <p>Maximum Customers per Hour:<br><input type="text" name="maxcustomer" size="15" maxlength="30" /></p>
-      <p>Average Customers per Hour:<br><input type="text" name="avgcustomer" size="15" maxlength="30" /></p>
-      <input type="submit">
+    <form id="salesform">Enter New Store Location
+      <label for="storeLocLabel">Location name:<br></label><input id="storeloc" type="text" size="15" maxlength="30" /><br>
+      <label for="minCustLabel">Minimum Customers per Hour:<br></label><input id="mincustomer" type="text" size="15" maxlength="30" /><br>
+      <label for="maxCustLabel">Maximum Customer per Hour:<br></label><input id="maxcustomer" type="text" size="15" maxlength="30" /><br>
+      <label for+"avgCustLabel">Average Customers per Hour:<br></label><input id="avgcustomer" type="text" size="15" maxlength="30" /><br>
+
+      <button id="formbutton" type="click">Submit Store</button>
     </form>
   </div>
   <script src="app.js"></script>

@@ -104,6 +104,7 @@ article ul {
   margin: 10px 10px 0 5px;
   float: none;
   display:inline-block;
+  list-style-image: url("img/salmon-bullet.png");
 }
 
 .history {
@@ -150,15 +151,43 @@ tr {
   border: 2px solid #fff;
 }
 
-thead {
+tr:hover {
+  background-color: #82e3ef;
+}
+
+td:hover {
+  background-color: #dea591;
+}
+
+th {
   padding: 0px 15px 0px 15px;
   border: 2px solid #fff;
   text-align: left;
+  background-color: #c4bb98;
 }
 
 /*Form style*/
 
 form {
-  padding: 0px 15px 0px 15px;
+  padding: 20px;
   border: 2px solid #fff;
+  border-radius: 15px;
+  text-align: left;
+}
+
+input {
+  background-color: #f2f0e9;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  background-color: #fff;
+}
+
+input#storeloc {
+  background-image: url("img/salmon-logo.png");
+}
+button {
+  margin: 10px;
 }
