@@ -27,10 +27,10 @@ var CookieStand = function(place, minCustHour, maxCustHour, avgCookiesCust) {
 	};
 	this.totalCookiesDay();
   function makeTable(loc, array, total) {
-    var location = document.getElementById('sales');
+    var storeLocation = document.getElementById('sales');
     var row = document.createElement('tr');
     row.appendChild(document.createTextNode(loc));
-    location.appendChild(row);
+    storeLocation.appendChild(row);
 
     for(var i = 0; i < array.length; i++) {
         var hour = row;
