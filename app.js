@@ -89,7 +89,7 @@ var handleFormSubmit = function(e) {
    	return alert('Store Location must contain more than 3 characters.');
    }
 
-   else if (minCust.value > maxCust.value) {
+   else if (Number(minCust.value) > Number(maxCust.value)) {
    	return alert('The maximum customer number should be greater than the mininmum customer number.');
    }
 
