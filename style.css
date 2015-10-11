@@ -15,6 +15,10 @@ h1 {
 	font-family: Helvetica, sans-serif;
 }
 
+h1#style {
+  text-align: left;
+}
+
 h4 {
 	font-family: "Courier New", Courier, monospace;
 }
@@ -28,11 +32,6 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-#style1 {
-  background-color: black;
-  color: white;
 }
 
 .full-width
@@ -208,8 +207,23 @@ input:focus {
 input#storeloc {
   background-image: url("img/salmon-logo.png");
 }
+
 button {
-  margin: 10px;
+  margin: 15px 10px 10px 10px;
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: 16px;
+  background: #266fa1;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border-style: none;
+}
+
+button:hover {
+  background: #3cb0fd;
+  text-decoration: none;
 }
 
 /*Footer*/
@@ -220,7 +234,7 @@ button {
 
 iframe {
   margin: 15px;
-  width: 40%;
+  width: 30%;
 }
 
 footer {
@@ -229,14 +243,20 @@ footer {
 
 footer aside {
   float: right;
-  width: 30%;
+  width: 65%;
+}
+
+footer nav ul {
+  text-align: right;
+  padding-right: 30px;
 }
 
 footer nav li {
   margin: 10px;
   padding: none;
-  display: inherit;
+  display: inline;
   list-style-type: none;
+  float: bottom;
 }
 
 footer p {
@@ -252,3 +272,33 @@ footer nav li a {
 footer nav li a:hover {
   color: #000000;
 }
+
+/*Style guide*/
+
+
+#style1 {
+  background-color: black;
+  color: white;
+}
+
+.palettes {
+  margin: 10px;
+}
+
+.palettes img {
+  position: left;
+  margin: 10px;
+  display: inline-block;
+  float: none;
+}
+
+.guide {
+  width: 940px;
+  margin: 20px auto 20px auto;
+  background-color: #f0e9ce;
+}
+
+.guide section {
+  padding: 10px;
+}
+
