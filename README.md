@@ -1,4 +1,6 @@
 # cookie-stand
 cf assignment Oct 6
 
-Tuesday copy of Cookie Stand assignment.
+Finalized project on Oct 11, 2015
+
+Created table of store locations and developed a way to add stores to the table through a form.
