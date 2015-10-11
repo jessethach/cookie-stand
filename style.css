@@ -1,12 +1,22 @@
 body {
 	font-family: 'Lato', sans-serif;
 	background-color: #f0e9ce;
+  background: url("img/wave-background.png");
+  background-size: 100%;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 h1 {
 	text-align: center;
 	color: #266fa1;
 	font-family: Helvetica, sans-serif;
+}
+
+h1#style {
+  text-align: left;
 }
 
 h4 {
@@ -18,42 +28,10 @@ p {
   text-justify: inter-word;
 }
 
-/*ul {
-  border-top-left-radius: 80px 30px;
-  postion: center;
-	display:inline-block;
-	color: #808080;
-	padding-bottom: 3px;
-	font-size: 14px;
-	padding-right: 10px;
-	float: left;
-  font-weight: bold;
-  margin: 0 50px 0 5px;
-  padding: 15 !important;
-  text-align: center;
-  background-color: #f4f1e7;
-  line-height: 150%;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #266fa1 #266fa1 #000 #266fa1;
-  text-align: justify;
-  text-justify: inter-word;
-  letter-spacing: 0.07em;
-}*/
-
-.menu {
-    justify-content: space-between;
-}
-
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-#style1 {
-  background-color: black;
-  color: white;
 }
 
 .full-width
@@ -70,37 +48,51 @@ img {
     height: auto;
 }
 
-header {
-  background-color: #f3f2f1;
-  border: 1px solid #000000;
+header img {
+  margin-bottom: 10px;
 }
 
 .wrapper {
   width: 940px;
   margin: 20px auto 20px auto;
+  background-color: #f0e9ce;
 }
 
-nav ol {
+/*Navigation menu*/
+
+header nav ol {
   margin: 0px;
-  padding: 5px 0px 15px 30px;
-  background-color: #f4f1e7;
+  padding: 15px 0px 15px 30px;
+  background-color: #c4bb98;
   border-style: solid;
-  border-color: #000000;
+  border-color: #fff;
   border-top-width: 1px;
   border-right-style: none;
   border-bottom-style: none;
   border-left-style: none;
+  list-style-type: none;
 }
 
-nav li {
+header nav li {
   display: inline;
   margin-right: 40px;
   border-color: #266fa1 #266fa1 #000 #266fa1;
-  background-color: #f4f1e7;
+  background-color: #c4bb98;
   letter-spacing: 0.07em;
   text-align: center;
-  style
+  color: #fff;
 }
+
+header nav li a {
+  color: #b75835;
+  font-weight: bold;
+}
+
+header nav li a:hover {
+  color: #000000;
+}
+
+/*Main section*/
 
 section {
   padding: 0px 15px 0px 15px;
@@ -109,7 +101,7 @@ section {
 
 section img {
   float: right;
-  width: 25%;
+  width: 15%;
 }
 
 article {
@@ -127,6 +119,7 @@ article ul {
   margin: 10px 10px 0 5px;
   float: none;
   display:inline-block;
+  list-style-image: url("img/salmon-bullet.png");
 }
 
 .history {
@@ -154,3 +147,158 @@ article ul {
   float: right;
   width: 40%;
 }
+
+/*Table style*/
+
+table {
+  padding: 0px 15px 0px 15px;
+  border: 4px solid #fff;
+  width: 100%;
+}
+
+td {
+  padding: 0px 15px 0px 15px;
+  border: 2px solid #fff;
+}
+
+tr {
+  padding: 0px 15px 0px 15px;
+  border: 2px solid #fff;
+}
+
+tr:hover {
+  background-color: #82e3ef;
+}
+
+td:hover {
+  background-color: #dea591;
+}
+
+th {
+  padding: 0px 15px 0px 15px;
+  border: 2px solid #fff;
+  text-align: left;
+  background-color: #c4bb98;
+}
+
+/*Form style*/
+
+fieldset {
+  width: 50%;
+}
+
+form {
+  padding: 20px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  text-align: left;
+}
+
+input {
+  background-color: #f2f0e9;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  background-color: #fff;
+}
+
+input#storeloc {
+  background-image: url("img/salmon-logo.png");
+}
+
+button {
+  margin: 15px 10px 10px 10px;
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: 16px;
+  background: #266fa1;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border-style: none;
+}
+
+button:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+/*Footer*/
+
+#rightsreserved {
+  text-align: bottom-right;
+}
+
+iframe {
+  margin: 15px;
+  width: 30%;
+}
+
+footer {
+  background-color: #b75835;
+}
+
+footer aside {
+  float: right;
+  width: 65%;
+}
+
+footer nav ul {
+  text-align: right;
+  padding-right: 30px;
+}
+
+footer nav li {
+  margin: 10px;
+  padding: none;
+  display: inline;
+  list-style-type: none;
+  float: bottom;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
+}
+
+footer nav li a {
+  color: #fff;
+  font-weight: bold;
+}
+
+footer nav li a:hover {
+  color: #000000;
+}
+
+/*Style guide*/
+
+
+#style1 {
+  background-color: black;
+  color: white;
+}
+
+.palettes {
+  margin: 10px;
+}
+
+.palettes img {
+  position: left;
+  margin: 10px;
+  display: inline-block;
+  float: none;
+}
+
+.guide {
+  width: 940px;
+  margin: 20px auto 20px auto;
+  background-color: #f0e9ce;
+}
+
+.guide section {
+  padding: 10px;
+}
+
