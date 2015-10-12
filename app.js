@@ -93,10 +93,6 @@ var handleFormSubmit = function(e) {
    	return alert('The maximum customer number should be greater than the mininmum customer number.');
    }
 
-   else if {
-
-   }
-
    else
 
    //Begin debug
