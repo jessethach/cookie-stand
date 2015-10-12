@@ -1,3 +1,6 @@
+
+var storeReplace = [];
+
 //Creating Cookie Stand constructor method
 var CookieStand = function(place, minCustHour, maxCustHour, avgCookiesCust) {
 	this.place = place;
@@ -51,15 +54,6 @@ var CookieStand = function(place, minCustHour, maxCustHour, avgCookiesCust) {
 		}
 		// Calling the makeTable function and creating the rows
 		makeTable(this.place, this.cookiesByHourList, this.cookieTotal);
-
-		var table = document.getElementById("sales");
-		var rows = table.getElementsByTagName("tr");
-		for(i = 0; i <rows.length; i++){
-			if(i % 2 ==0){
-				rows[i].className = "even";
-				// rows[1].id = "example";
-			}
-		}
 }
 
 //Hard wired stores
